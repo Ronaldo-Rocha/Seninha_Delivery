@@ -14,7 +14,7 @@
    <header class="container-fluid  bg-light">
    </header>
     <!-- NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-success p-2 text-dark bg-opacity-75 ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-2 text-dark bg-opacity-75 ">
       <div class="container">
         <a class="navbar-brand" href="#"><img class="logo-img" src="img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,15 +25,18 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#advantage">Vantagens</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#howit">Como funciona</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Sobre</a>
-            </li>
+
+            <div class="dropdown">
+              <button class="btn btn-secondary bg-light text-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Como Funciona
+              </button>
+              <ul class="dropdown-menu bg-white p-2 text-dark bg-opacity-75 " aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#advantage">Vantagens</a></li>
+                <li><a class="dropdown-item" href="#howit">Como funciona</a></li>
+                <li><a class="dropdown-item" href="#about">Sobre</a></li>
+              </ul>
+            </div>
+
             <li class="nav-item">
               <a class="nav-link" href="#contact">Fale Conosco</a>
             </li>
@@ -44,7 +47,7 @@
               <a class="nav-link" href="#">Integração</a>
             </li>
             <li class="nav-item">
-              <input type="button" value="LOGIN">
+              <button type="button" class="btnLogin ">LOGIN</button>
             </li>
           </ul>
         </div>
@@ -55,21 +58,62 @@
 
     <!-- SERVICE -->
     <div class="container mt-5 border shadow-lg rounded ">
-      <div class="content-text mt-5 pt-5"> <!--espaço entre o menu e conteudo-->
-        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-        <span>Lorem ipsum dolor sit amet.</span>
+      <div class="content-text ms-5 mt-5"> <!--espaço entre o menu e conteudo-->
+        <h1>Agilize suas entregas!</h1>
+        <span>Mais pratico, mais seguro e mais rapido! </span>
         <h4>Escolha o tipo de serviço abaixo:</h4>
       </div>
 
       <div class="row mt-5 "  >
-        <div class="col-md-6">
+        <div class="col-md-5 border ms-5 pt-5">
           <div class="row">
-            <div class="col-md-4 col-sm-6"><img class="moto-icon" src="img/Moto.png" alt=""></div>
-            <div class="col-md-4 col-sm-6"><img class="moto-icon" src="img/Moto.png" alt=""></div>
-            <div class="col-md-4 col-sm-6"><img class="moto-icon" src="img/Moto.png" alt=""></div>
+            
+            <div class="col-md-4 col-sm-6">
+              <div class="block-box border">
+              <div class="bg-moto">
+                <div class="img-moto">
+                    <!-- imagem-moto -->
+                </div>
+              </div>
+            </div>
+
+              <div class="ms-4">
+                <span> veiculo1</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="block-box border">
+              <div class="bg-moto">
+                <div class="img-moto">
+                    <!-- imagem-moto -->
+                </div>
+              </div>
+            </div>
+
+              <div class="ms-4">
+                <span> veiculo1</span>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="block-box border">
+              <div class="bg-moto">
+                <div class="img-moto">
+                    <!-- imagem-moto -->
+                </div>
+              </div>
+            </div>
+
+              <div class="ms-4">
+                <span> veiculo1</span>
+              </div>
+            </div>
+            
           </div>
+          
         </div>
-        <div class="col-lg-6"><img class="delivery-img" src="img/Delivery address-pana.png" alt="delivery"></div>
+        <div class="col-md-5 col-md-4 border"><img class="delivery-img" src="img/Delivery address-pana.png" alt="delivery"></div>
       </div>
 
     </div>
@@ -202,13 +246,13 @@
             </div>
           </div>
           
-          <div class="row">
+          <div class="row border "> <!--saindo do container !!!!!ARRUMAR!!!!!!!!!-->
             <div class="col-md-6">
-              <img class="app-delivery" src="img/In no time-rafiki.png" alt="">
+              <img class="app-delivery " src="img/In no time-rafiki.png" alt="">
             </div>
             <div class="col-md-6">
               <h3>Aplicativo disponivel em:</h3>
-              <a href="#"><img class="logoplay" src="img/google-play-logo.png" alt="logomarca-google-play"> </a>
+              <a href="#"><img class="logoplay " src="img/google-play-logo.png" alt="logomarca-google-play"> </a>
             </div>
           </div>
         </div>
@@ -219,11 +263,13 @@
     <!-- ABOUT -->
     <section id="about">
       <div class="container mt-5 border shadow-lg rounded">
-
-        <div class="row mt-5">
-          <div class="col-md-5">
-                <h1>Sobre a Seninha Delivery</h1>
-                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, magni soluta hic ullam ea earum unde voluptatum, adipisci cumque, eveniet facilis! Cupiditate, nam ad cum eaque incidunt doloribus sed? Iure?</span>
+          <div class="row text-center mt-5">
+            <h1>SOBRE</h1>
+          </div>
+        <div class="row mt-5 border">
+          <div class="col-md-5 border ms-5">
+                <h1>A Seninha Delivery</h1>
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi esse deserunt natus dignissimos iusto iure explicabo! Asperiores unde enim ratione labore error voluptatibus molestias dignissimos, quos qui beatae delectus officiis neque ex soluta consectetur voluptatem, quisquam maxime voluptate iusto autem quis velit sint! Odio voluptatem natus repellendus praesentium quibusdam omnis debitis perspiciatis id quasi. Consequatur doloremque, impedit et est ullam deleniti! Optio maiores soluta numquam ducimus quo aspernatur porro fugiat! Inventore quidem dolor, numquam cumque molestias doloremque suscipit distinctio consequatur, ipsum voluptatem nesciunt consequuntur aperiam adipisci iure illum quis quos! Ullam, voluptas dolores hic harum qui dolore quaerat facilis ipsam explicabo, vel fuga consequatur earum? Aut sunt ullam ipsa illo accusantium sed veritatis omnis aliquid fuga aliquam odit, itaque tenetur, hic facere aperiam iste doloribus! Earum saepe, nisi natus laudantium, perferendis quas repellendus ullam vel esse eveniet consectetur quae eligendi eius veritatis impedit amet blanditiis et sit ducimus similique quaerat.</span>
           </div>
           <div class="col-md-6">
               <img class="delivery-img" src="img/About us page-pana.png" alt="">
@@ -235,7 +281,7 @@
     <!-- END ABOUT -->
     <!-- CONTACT -->
     <section id="contact">
-      <div class="container mt-5 border shadow-lg rounded">
+      <div class="container mt-5 mb-5 border shadow-lg rounded">
       
         <div class="row ms-2">
           <h2>Fale Conosco</h2>
@@ -251,12 +297,12 @@
 
           <div class="col-md-6 m-3 pb-3 pt-3">
             <img class="play-icon" src="img/envelope-solid.svg" alt="">
-            <span>(11) 9 3030-3030</span>
+            <span>(11)93030-3030</span>
           </div>
 
           <div class="col-md-6 m-3 pb-3 pt-3">
             <img class="play-icon" src="img/envelope-solid.svg" alt="">
-            <span>(11) 9 3030-3030</span>
+            <span>(11)93030-3030</span>
           </div>
         </div>
           <!-- formulario -->
@@ -310,8 +356,7 @@
       </footer>
     </div>
     <!-- END FOOTER -->
-
-    <script src="js/scrolling.js"></script>
+     
     <!-- Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.min.js"></script>
 

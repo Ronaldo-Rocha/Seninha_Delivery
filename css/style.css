@@ -9,10 +9,53 @@ header{
     height: 540px;
     width: 540px;
 }
-.moto-icon{
+/* veiculos */
+.block-box{
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+
+}
+.bg-moto{
+    background-color: #E65B00;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;  
+    transition: 0.5s;
+
+    position: absolute;
+    bottom: 0;
+}
+.bg-moto:hover{
+    background-color: #8a3e0b;
+    height: 130px;
+    width: 130px;
+    transition: 0.5s;
+}
+.img-moto{
+    background-image: url(/img/Moto.png);
     height: 100px;
     width: 100px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 15px 20px;
+    transition: 0.5s;
+
 }
+.img-moto:hover{
+    height: 110px;
+    width: 110px;
+    transition: 0.5s;
+}
+.moto-icon{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+/* fim veiculo */
+
 .iconeVantagens{
     height:150px ;
     width: 150px;
@@ -24,8 +67,27 @@ header{
 
 }
 .app-delivery{
-    height: 350px;
+    width: 50%;
 }
 .logoplay{
-    height: 180px;
+    width: 50%;
+}
+
+/* LOGIN BUTTON */
+.btnLogin{
+    background-color: #E65B00;
+    font-size: 1rem;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.btnLogin:hover{
+    background-color: #FFFFFF;
+    border: 1px solid #E65B00;
+    color: #E65B00;
+    transition: 0.5s;
 }
