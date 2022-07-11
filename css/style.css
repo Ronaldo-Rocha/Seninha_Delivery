@@ -1,0 +1,31 @@
+header{
+    height: 10vh;
+}
+.logo-img{
+    height: 80px;
+    width: auto;
+}
+.delivery-img{
+    height: 540px;
+    width: 540px;
+}
+.moto-icon{
+    height: 100px;
+    width: 100px;
+}
+.iconeVantagens{
+    height:150px ;
+    width: 150px;
+}
+.play-icon{
+    background-color: #E65B00;
+    border-radius: 50%;
+    height: 80px;
+
+}
+.app-delivery{
+    height: 350px;
+}
+.logoplay{
+    height: 180px;
+}
