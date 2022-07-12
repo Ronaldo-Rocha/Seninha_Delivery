@@ -19,7 +19,7 @@ header{
 
 }
 .bg-moto{
-    background-color: #E65B00;
+    background-color: whitesmoke;
     height: 120px;
     width: 120px;
     border-radius: 50%;  
@@ -29,13 +29,13 @@ header{
     bottom: 0;
 }
 .bg-moto:hover{
-    background-color: #8a3e0b;
+    background-color: #E65C00;
     height: 130px;
     width: 130px;
     transition: 0.5s;
 }
 .img-moto{
-    background-image: url(/img/Moto.png);
+    background-image: url(/assets/img/Moto.png);
     height: 100px;
     width: 100px;
     background-size: 80%;
@@ -62,7 +62,7 @@ header{
     width: 150px;
 }
 .user-adv-icon{
-    background-image: url(/img/user-check-solid.svg);
+    background-image: url(/assets/img/icons/user-check-solid.svg);
     background-size: 70%;
     height: 150px;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@ header{
 
 
 .play-icon{
-    background-color: #E65B00;
+    background-color: #E65C00;
     border-radius: 50%;
     height: 80px;
 
@@ -86,7 +86,7 @@ header{
 
 /* LOGIN BUTTON */
 .btnLogin{
-    background-color: #E65B00;
+    background-color: #E65C00;
     font-size: 1rem;
     width: 80px;
     height: 30px;
@@ -98,7 +98,7 @@ header{
 }
 .btnLogin:hover{
     background-color: #FFFFFF;
-    border: 1px solid #E65B00;
-    color: #E65B00;
+    border: 1px solid #E65C00;
+    color: #E65C00;
     transition: 0.5s;
 }
