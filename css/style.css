@@ -56,10 +56,21 @@ header{
 }
 /* fim veiculo */
 
+/* icones vantagens */
 .iconeVantagens{
     height:150px ;
     width: 150px;
 }
+.user-adv-icon{
+    background-image: url(/img/user-check-solid.svg);
+    background-size: 70%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: 15px 20px;
+}
+
+
+
 .play-icon{
     background-color: #E65B00;
     border-radius: 50%;
