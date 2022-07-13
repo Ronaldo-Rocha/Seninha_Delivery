@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap');
+
+/* text-format */
+.fonth1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color:#E65C00;
+}
+.spancs, p, label{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* end text-format */
 header{
     height: 10vh;
 }
+
+
 .logo-img{
     height: 80px;
     width: auto;
@@ -68,21 +83,54 @@ header{
     background-repeat: no-repeat;
     background-position: 15px 20px;
 }
+.blockadv{
+    background-color: whitesmoke;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.blockadv:hover{
+    box-shadow: 10px 5px 5px black;
+    background-color: #e65c00bb;
+    color: #FFFFFF; 
+    transition: 0.5s;
+   
+}
 
+/* how config */
+.howork-align-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.cardhow{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+.cardhow:hover{
+    background-color: #E65C00;
+    transition: 0.5s;
+    color: #FFFFFF;
+}
 
 
 .play-icon{
-    background-color: #E65C00;
+    background-color: whitesmoke;
     border-radius: 50%;
     height: 80px;
 
 }
+
 .app-delivery{
     width: 50%;
 }
 .logoplay{
     width: 50%;
 }
+
+/* end how config */
 
 /* LOGIN BUTTON */
 .btnLogin{
