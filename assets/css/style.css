@@ -22,8 +22,7 @@ header{
     width: auto;
 }
 .delivery-img{
-    height: 540px;
-    width: 540px;
+    width: 100%;
 }
 /* veiculos */
 .block-box{
