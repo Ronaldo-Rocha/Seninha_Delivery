@@ -12,122 +12,73 @@
   <body>
     <header class="container-fluid"></header>
     <!-- NAV -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-2 text-dark bg-opacity-75"
-    >
+	  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-2 text-dark bg-opacity-75 ">
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img class="logo-img" src="assets/img/logo.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#"><img class="logo-img" src="assets/img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary bg-light text-dark dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Como Funciona
-              </button>
-              <ul
-                class="dropdown-menu bg-white p-2 text-dark bg-opacity-75"
-                aria-labelledby="dropdownMenuButton1"
-              >
-                <li>
-                  <a class="dropdown-item" href="index.html#advantage"
-                    >Vantagens</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="index.html#howit"
-                    >Como funciona</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="index.html#about">Sobre</a>
-                </li>
-              </ul>
-            </div>
-
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#contact">Fale Conosco</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="trabalheConosco.html"
-                >Trabalhe Conosco</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Integração</a>
-            </li>
-            <li class="d-flex align-items-center">
-              <a class="btnLogin" href="login.html">LOGIN</a>
-            </li>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+          </li>
+    
+          <div class="dropdown outline">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            COMO FUNCIONA
+          </button>
+          <ul class="dropdown-menu bg-white p-2 text-dark bg-opacity-75 " aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="index.html#advantage">VANTAGENS</a></li>
+            <li><a class="dropdown-item" href="index.html#howit">COMO FUNCIONA</a></li>
+            <li><a class="dropdown-item" href="index.html#about">SOBRE</a></li>
           </ul>
+          </div>
+    
+          <li class="nav-item">
+          <a class="nav-link" href="index.html#contact">CONTATO</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="trabalheConosco.html">TRABALHE CONOSCO</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">INTEGRAÇÃO</a>
+          </li>
+          <li class="d-flex align-items-center">
+          <a class="btnLogin " href="login.html">LOGIN</a>
+          </li>
+        </ul>
         </div>
       </div>
-    </nav>
-    <!-- end NAV -->
+      </nav>
+      <!-- end NAV -->
     <!-- FORM LOGIN  -->
-    <div class="container mt-5 border shadow-lg rounded">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              class="delivery-img"
-              src="assets/img/mobile-login-animate.svg"
-              alt=""
-            />
-          </div>
-          <div class="container-form-login col-md-4">
-            <form class="form-login mt-2">
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label fw-bold"
-                  >EMAIL</label
-                >
-                <input
-                  type="email"
-                  class="form-control "
-                  id="exampleInputEmail1"
-                  placeholder="insira seu email"
-                />
+    <div class="container mt-5 mb-5 shadow-lg rounded">
+      <div class="col-md-12 p-5 p-lg-0">
+          <div class="row d-flex align-items-center">
+              <div class="col-md-6 d-none d-lg-block">
+                  <img class="delivery-img" src="assets/img/mobile-login-animate.svg" alt="" />
               </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label fw-bold"
-                  >SENHA</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="sua senha"
-                />
+              <div class="col-11 col-sm-9 col-md-6 col-lg-4   m-auto ms-lg-0">
+                  <div class="container-form-login p-5">
+                      <form class="form-login mt-2">
+                          <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label fw-bold">EMAIL</label>
+                              <input type="email" class="form-control " id="exampleInputEmail1"
+                                  placeholder="insira seu email" />
+                          </div>
+                          <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label fw-bold">SENHA</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1"
+                                  placeholder="sua senha" />
+                          </div>
+                          <button type="submit" class="btnLoginPage">ENTRAR</button>
+                      </form>
+                  </div>
               </div>
-              <button type="submit" class="btnLoginPage">Enviar Mensagem</button>
-            </form>
           </div>
-        </div>
       </div>
-    </div>
+  </div>
     <!-- END FORM LOGIN -->
 
     <!-- FOOTER -->

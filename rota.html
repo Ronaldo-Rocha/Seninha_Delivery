@@ -26,7 +26,7 @@
                 </li>
     
                 <div class="dropdown">
-                <button class="btn btn-secondary bg-light text-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn bg-light text-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Como Funciona
                 </button>
                 <ul class="dropdown-menu bg-white p-2 text-dark bg-opacity-75 " aria-labelledby="dropdownMenuButton1">
@@ -53,52 +53,139 @@
         </div>
         </nav>
 	<!-- end NAV -->
-    <!-- calc table  -->
-        <div class="container">
+    <!-- veicle selection -->
+    <div class="container mt-5 mb-5 pb-3 border shadow-lg rounded">
+        <div class="col-md-12">
+            <h4>Escolha o tipo de serviço abaixo:</h4>
             <div class="row">
-                <div class="col-xl-12">
-                    <div class="card m-b-20">
-                        <h5 class="card-header">Tabs</h5>
-                        <div class="card-body">
-                            <form>
-                                <div class="border pt-0">
-                                    <ul class="nav nav-tabs nav-justified">
-                                        <li class="nav-item"><a href="#tab1" data-toggle="tab"
-                                                class="nav-link font-bold">Tela 1</a></li>
-                                        <li class="nav-item"><a href="#tab2" data-toggle="tab"
-                                                class="nav-link font-bold">Tela 2</a></li>
-                                        <li class="nav-item"><a href="#tab3" data-toggle="tab"
-                                                class="nav-link font-bold">Tela 3</a></li>
-                                    </ul>
-                                    <div class="card-body mt-3 b-0 mb-0">
-                                        <div class="tab-pane" id="tab1">
-                                            <p>Tela 1</p>
-                                        </div>
-                                        <div class="tab-pane d-none" id="tab2">
-                                            <p>Tela 2</p>
-                                        </div>
-                                        <div class="tab-pane d-none" id="tab3">
-                                            <p>Tela 3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                <div class="col-lg-2 col-md-3">
+                    <div class="block-box-rota ">
+                        <div class="bg-moto-rota">
+                            <div class="img-moto-rota">
+                                <!-- imagem-moto -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div><!-- end row -->
+
+                    <div class="col-lg-2 col-md-3">
+                        <div class="block-box ">
+                            <div class="bg-moto">
+                                <div class="img-moto">
+                                    <!-- imagem-moto -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
-    <!-- end calc table -->
+    </div>
+    <!-- end veicle selection -->
+    <!-- point area -->
+    <div class="container mt-5 mb-5 pb-3 border shadow-lg rounded">
+        <!-- calc table  -->
+            <div class="container pb-5">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card m-b-20">
+                            <form class="form-point">
+                                <div class="mb-3">
+                                    <div class="col-md-12  mt-3"> <!--ajuste responsividade 425 input-->
+                                            <img class="rota-icon" src="assets/img/icons/map-pin-line.svg" alt="ponto de mapa">  
+                                            <span class="fw-bold">Ponto 1</span>
+                                            <input type="text" placeholder="Informe o endereço">
+                                            <input type="text" name="" id="" placeholder="complemento">
+                                    </div>
+                                </div>
+                            </form>
+                            <h5 class="card-header">Informações do ponto 1</h5>
+                            <div class="card-body">
+                                <form>
+                                    <div class="border pt-0">
+                                        <ul class="nav nav-tabs nav-justified">
+                                            <li class="nav-item"><a href="#tab1" data-toggle="tab"
+                                                    class="nav-link font-bold">Buscar Documento</a></li>
+                                            <li class="nav-item"><a href="#tab2" data-toggle="tab"
+                                                    class="nav-link font-bold">Buscar Pacote</a></li>
+                                            <li class="nav-item"><a href="#tab3" data-toggle="tab"
+                                                    class="nav-link font-bold">Outros</a></li>
+                                        </ul>
+                                        <div class="card-body mt-3 b-0 mb-0">
+                                            <div class="tab-pane" id="tab1">
+                                                <p>Nome do documento</p>
+                                            </div>
+                                            <div class="tab-pane d-none" id="tab2">
+                                                <p>Nome do pacote</p>
+                                            </div>
+                                            <div class="tab-pane d-none" id="tab3">
+                                                <p>Nome outro documento</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-12">
+                                <form class="form-point">
+                                    <div class="mb-3">
+                                        <img class="rota-icon" src="assets/img/icons/map-pin-fill.svg" alt="ponto de mapa">
+                                        <span class="fw-bold"> Ponto 2</span>
+                                      <input type="text" class="" placeholder="Informe o endereço">
+                                      <input type="text" name="" id="" placeholder="complemento">
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- calc table 2  -->
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="card m-b-20">
+                                                <h5 class="card-header">Informações do ponto 2</h5>
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="border pt-0">
+                                                            <ul class="nav nav-tabs nav-justified">
+                                                                <li class="nav-item"><a href="#tab4" data-toggle="tab"
+                                                                        class="nav-link font-bold">Buscar Documento</a></li>
+                                                                <li class="nav-item"><a href="#tab5" data-toggle="tab"
+                                                                        class="nav-link font-bold">Buscar Pacote</a></li>
+                                                                <li class="nav-item"><a href="#tab6" data-toggle="tab"
+                                                                        class="nav-link font-bold">Outros</a></li>
+                                                            </ul>
+                                                            <div class="card-body mt-3 b-0 mb-0">
+                                                                <div class="tab-pane" id="tab4">
+                                                                    <p>Nome do documento</p>
+                                                                </div>
+                                                                <div class="tab-pane d-none" id="tab5">
+                                                                    <p>Nome do pacote</p>
+                                                                </div>
+                                                                <div class="tab-pane d-none" id="tab6">
+                                                                    <p>Nome outro documento</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end row -->
+                            <!-- end calc table 2-->
+                        </div>
+                    </div>
+                </div><!-- end row -->
+            </div>
+        <!-- end calc table -->  
+    </div>
+    <!-- end point area -->
 
     <!-- FOOTER -->
-    <div class="container-fluid border shadow-lg">
+    <div class="footer-container container-fluid border shadow-lg">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
+          <p class="p-footer col-md-4 mb-0 ">&copy; 2022 Company, Inc</p>
       
           <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="assets/img/facebook-square-brands.svg" alt="" height="30px"></a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="assets/img/instagram-brands.svg" alt="" height="30px"></a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="assets/img/whatsapp-brands.svg" alt="" height="30px"></a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="assets/img/icons/facebook-square-brands.svg" alt=" facebook icon" height="30px"></a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="assets/img/icons/instagram-brands.svg" alt=" instagram icon" height="30px"></a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><img src="assets/img/icons/whatsapp-brands.svg" alt="whatsapp icon" height="30px"></a></li>
           </ul>
         </footer>
       </div>
