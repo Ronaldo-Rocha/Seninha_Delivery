@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap');
 
-/* menu nav color */
+/* menu nav confg */
 .dropdown-item,.dropdown button,.nav-link{
     color: #E65C00 !important;
     font-weight: 700;
 }
-
+.dropdown-item:hover{
+    background: whitesmoke !important;
+}
 
 /* text-format */
 .fonth1{
@@ -129,9 +131,11 @@ header{
 
 
 .play-icon{
-    background-color: #FF0000;
-    border-radius: 50%;
-    height: 80px;
+    background-color: #FFFFFF;
+    border-radius: 40%;
+    height: 110px;
+    width: 110px;
+    padding: 10px;
 }
 
 .bg-contact-icon{
