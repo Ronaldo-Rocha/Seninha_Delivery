@@ -56,12 +56,12 @@ header{
     transition: 0.5s;
 }
 .img-moto{
-    background-image: url(/assets/img/Moto.png);
+    background-image: url(/assets/img/icons/motorcycle.png);
     height: 100px;
     width: 100px;
     background-size: 80%;
     background-repeat: no-repeat;
-    background-position: 15px 20px;
+    background-position: 20px 20px;
     transition: 0.5s;
 
 }
@@ -286,10 +286,17 @@ header{
     bottom: 0;
 }
 .img-moto-rota{
-    background-image: url(/assets/img/Moto.png);
+    background-image: url(/assets/img/icons/motorcycle.png);
     height: 100px;
     width: 100px;
     background-size: 80%;
     background-repeat: no-repeat;
-    background-position: 15px 20px;
+    background-position: 20px 20px;
+}
+.container-map{
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+iframe{
+    width: 100%;
 }
