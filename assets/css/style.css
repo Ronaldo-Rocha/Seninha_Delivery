@@ -111,12 +111,12 @@ header{
 }
 
 /* how config */
-.howork-align-items{
+/* .howork-align-items{
     display: flex;
     flex-direction: row;
     justify-content: center;
 
-}
+} */
 .cardhow{
     background-color: whitesmoke;
     border-radius: 10px;
@@ -303,4 +303,17 @@ header{
 }
 iframe{
     width: 100%;
+}
+
+input.tab-input {
+    cursor: pointer;
+}
+
+input.tab-input:focus {
+    box-shadow: none;
+}
+
+.bg-orange {
+    background-color: #E65C00 !important;
+    color: white !important;
 }
