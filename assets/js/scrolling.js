@@ -12,13 +12,13 @@ for (let i = 0; i < tabs.length; i++) {
                 }
             }
 
+            content.classList.toggle('d-none')
+
             for (let k = 0; k < tabs.length; k++) {
                 tabs[k].classList.remove('bg-orange')
             }
 
             tabs[i].classList.add('bg-orange')
-
-            content.classList.toggle('d-none')
     })
 }
 
