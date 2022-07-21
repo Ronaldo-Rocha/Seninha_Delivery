@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-    <title>Seninha Delivery</title>
+    <title>Seninha Delivery - Login</title>
   </head>
   <body>
     <header class="container-fluid"></header>
@@ -71,7 +71,23 @@
                               <label for="exampleInputPassword1" class="form-label fw-bold">SENHA</label>
                               <input type="password" class="form-control" id="exampleInputPassword1"
                                   placeholder="sua senha" />
-                          </div>
+                                </div>
+                                <!-- collapse reset password  -->
+                                <p>
+                                  <a class="btn fw-bold" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Esqueceu a senha?
+                                  </a>
+                                  
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                  <div class="card card-body mb-2">
+                                    <span class="spancs fw-bold pb-2"> Insira seu email:</span>
+                                    <input class="border border-2 text-lowercase pb-2" type="email" placeholder="exemplo@email.com" name="" id="">
+                                    <input class="" type="submit" value="Enviar">
+                                  </div>
+                                </div>
+                                <!-- collapse reset password  -->
+                                
                           <button type="submit" class="btnLoginPage">ENTRAR</button>
                       </form>
                   </div>
