@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Cadastrar Motoboy - Admin</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- chartist CSS -->
+    <link href="../plugins/bower_components/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="../plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <!-- Vector CSS -->
+    <link href="../plugins/bower_components/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <link href="../css/x0popup-master/dist/x0popup.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../css/x0popup-master/dist/x0popup.min.js"></script>
+
+</head>
+
+<body class="fix-header">
+    <!-- ============================================================== -->
+    <!-- Preloader -->
+    <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- Wrapper -->
+    <!-- ============================================================== -->
+    <div id="wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+                <div class="top-left-part">
+
+                </div>
+                <!-- /Logo -->
+                <!-- Search input and Toggle icon -->
+                <ul class="nav navbar-top-links navbar-left">
+                    <li><a href="javascript:void(0)" class="open-close waves-effect waves-light visible-xs"><i class="ti-close ti-menu"></i></a></li>
+
+                </ul>
+                <!-- <ul class="nav navbar-top-links navbar-right pull-right">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"><b class="hidden-xs"><?= $_SESSION['administrador']['admin_email']; ?></b><span class="caret"></span> </a>
+                        <ul class="dropdown-menu dropdown-user animated flipInY">
+
+                            <li><a href="<?= $site . 'admin/painel.php' ?>?logoff=true"><i class="fa fa-power-off"></i> Sair</a></li>
+                        </ul> -->
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- End Top Navigation -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav slimscrollsidebar">
+                <div class="sidebar-head">
+                    <h3><span class="fa-fw open-close"><i class="ti-menu hidden-xs"></i><i class="ti-close visible-xs"></i></span> <span class="hide-menu">MENU</span></h3>
+                </div>
+                <ul class="nav" id="side-menu">
+
+                    <li class="devider"></li>
+                    <li> <a href="<?= $site ?>admin/painel.php" class="waves-effect"><i class="icon-home"></i> <span class="hide-menu">Painel</span></a> </li>
+                    <li> <a href="<?= $site; ?>admin/painel.php?exe=configuracoes" class="waves-effect"><i class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Configurações</span></a> </li>
+                    <li> <a href="<?= $site; ?>admin/painel.php?exe=mudar-login" class="waves-effect"><i class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Alterar dados de login</span></a> </li>
+                    <li> <a href="<?= $site; ?>admin/painel.php?exe=todos-os-clientes"><i class="mdi mdi-account-multiple"></i> <span class="hide-menu">Todos os clientes</span></a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page Content -->
+        <!-- ============================================================== -->
+        <div id="page-wrapper" style="min-height: 888px;">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">BEM VINDO</h4>
+                    </div>                   
+                </div>
+
+
+                
+<!-- ============================================================== -->
+<!-- Other sales widgets -->
+<!-- ============================================================== -->
+<!-- .row -->
+
+<!-- /.row -->
+
+<!-- ============================================================== -->
+<!-- Demo table -->
+<!-- ============================================================== -->
+
+<!-- FORMULARIO  -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel">
+            
+                <div class="table-responsive">
+                    <form class="form-horizontal">
+                        <fieldset>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Cadastro Motoboy</div>
+                            
+                            <div class="panel-body">
+                        <div class="form-group">
+                        
+                        <div class="col-md-11 control-label">
+                                <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+                        </div>
+                        </div>
+                        
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>  
+                          <div class="col-md-8">
+                          <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+                          </div>
+                        </div>
+                        
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>  
+                          <div class="col-md-2">
+                          <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+                          </div>
+                        </div>
+                        
+                        
+                        <!-- Prepended text-->
+                        <div class="form-group">
+                          <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
+                          <div class="col-md-2">
+                            <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                              <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                              OnKeyPress="formatar('## #####-####', this)">
+                            </div>
+                          </div>
+                          
+                            <label class="col-md-1 control-label" for="prependedtext">Telefone</label>
+                             <div class="col-md-2">
+                            <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                              <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" type="text" maxlength="13"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                              OnKeyPress="formatar('## #####-####', this)">
+                            </div>
+                          </div>
+                         </div> 
+
+                        <!-- Search input-->
+                        <div class="form-group">
+                          <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
+                          <div class="col-md-2">
+                            <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+                          </div>
+                          <div class="col-md-2">
+                              <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Prepended text-->
+                        <!-- Prepended text-->
+<div class="form-group">
+    <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
+    <div class="col-md-4">
+      <div class="input-group">
+        <span class="input-group-addon">Rua</span>
+        <input id="rua" name="rua" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+      </div>
+      
+    </div>
+      <div class="col-md-2">
+      <div class="input-group">
+        <span class="input-group-addon">Nº <h11>*</h11></span>
+        <input id="numero" name="numero" class="form-control" placeholder="" required=""  type="text">
+      </div>
+      
+    </div>
+    
+    <div class="col-md-3">
+      <div class="input-group">
+        <span class="input-group-addon">Bairro</span>
+        <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="col-md-2 control-label" for="prependedtext"></label>
+    <div class="col-md-4">
+      <div class="input-group">
+        <span class="input-group-addon">Cidade</span>
+        <input id="cidade" name="cidade" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+      </div>
+      
+    </div>
+    
+     <div class="col-md-2">
+      <div class="input-group">
+        <span class="input-group-addon">Estado</span>
+        <input id="estado" name="estado" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+      </div>
+      
+    </div>
+  </div>
+  
+
+
+                      </form>
+                </div>
+            
+
+           
+        </div>
+    </div>
+</div>
+<!-- FIM FORM  -->
+<nav aria-label="Page navigation example">
+    <ul class="pagination"><li><a title="Primeiro" href="https://miodelivery.com.br/admin/painel.php?exe=home&amp;page=1">Primeiro</a></li><li><span class="active">1</span></li><li><a title="Página 2" href="https://miodelivery.com.br/admin/painel.php?exe=home&amp;page=2">2</a></li><li><a title="Último" href="https://miodelivery.com.br/admin/painel.php?exe=home&amp;page=2">Último</a></li></ul></nav>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $('.excluirlojaeuser').click(function(){
+            var iduserloja = $(this).data('idusereloja');
+
+            x0p({
+                title: 'Atênção',
+                text: 'Excluir esse cliente?',
+                icon: 'info',
+                animationType: 'fadeIn',
+                buttons: [
+                {
+                    type: 'cancel',
+                    text: 'Cancelar'
+                },
+                {
+                    type: 'info',
+                    text: 'Sim',
+                    showLoading: true
+                }
+                ]
+            }).then(function(data) {
+                if(data.button == 'info') {
+        // Simulate Delay
+        setTimeout(function() {
+
+
+
+            $.ajax({
+                url: 'https://miodelivery.com.br/admin/controlers/excluircliente.php',
+                method: 'post',
+                data: {'idcliente' : iduserloja},
+                success: function(data){
+                    if(data == 0){
+                        window.location.reload(1);
+                    }else if(data == 1){
+                        window.location.reload(1);
+                    }
+                }
+            });
+
+
+
+
+        }, 1500);
+    }
+});
+
+
+        });
+    });
+
+
+
+
+</script>
+
+
+
+
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2022 © Mío delivery</footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--Counter js -->
+    <script src="../plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="../plugins/bower_components/counterup/jquery.counterup.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!-- Vector map JavaScript -->
+    <script src="../plugins/bower_components/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="../plugins/bower_components/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="../plugins/bower_components/vectormap/jquery-jvectormap-in-mill.js"></script>
+    <script src="../plugins/bower_components/vectormap/jquery-jvectormap-us-aea-en.js"></script>
+    <!-- chartist chart -->
+    <script src="../plugins/bower_components/chartist-js/dist/chartist.min.js"></script>
+    <script src="../plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <!-- sparkline chart JavaScript -->
+    <script src="../plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="../plugins/bower_components/jquery-sparkline/jquery.charts-sparkline.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <script src="js/dashboard3.js"></script>
+    <!--Style Switcher -->
+    <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+
+    <script src="../js/jquery.mask.js"></script>
+    <script>
+        $('#dinheiro').mask('#.##0,00', {
+            reverse: true
+        });
+        $('.telefone').mask('(00) 0 0000-0000');
+        $('.estado').mask('AA');
+        $('.cpf').mask('000-000.000-00');
+        $('.cnpj').mask('00.000.000/0000-00');
+        $('.rg').mask('00.000.000-0');
+        $('.cep').mask('00000-000');
+        $('.dataNascimento').mask('00/00/0000');
+        $('.placaCarro').mask('AAA-0000');
+        $('.horasMinutos').mask('00:00');
+        $('.cartaoCredito').mask('0000 0000 0000 0000');
+        $('.numero').mask('#########0');
+        $('.descontoporcentagem').mask('##0');
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.salvarnovadata').click(function() {
+                var pegaiddocliente = $(this).data('iddaloja');
+
+                $.ajax({
+                    url: 'controlers/novadatarenovacao.php',
+                    method: 'post',
+                    data: $('#formRenovar_' + pegaiddocliente).serialize(),
+                    success: function(data) {
+                        if (data == "erro1") {
+                            $('#modalRenovar_' + pegaiddocliente).modal('hide');
+                            x0p('Opss...',
+                                'Informe a nova data!',
+                                'error', false);
+
+                        } else if (data == "erro2") {
+                            $('#modalRenovar_' + pegaiddocliente).modal('hide');
+                            x0p('Opss...',
+                                'o formato da data e inválido!',
+                                'error', false);
+                        } else if (data == "erro3") {
+                            $('#modalRenovar_' + pegaiddocliente).modal('hide');
+                            x0p('Opss...',
+                                'Ocorreu um erro!',
+                                'error', false);
+                        } else if (data == "erro0") {
+                            window.location.reload(1);
+                        }
+                    }
+                });
+
+            });
+        });
+    </script>
+    <script src="js/cep.js"></script>
+</body>
+
+</html>
