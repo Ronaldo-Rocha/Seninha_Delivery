@@ -16236,3 +16236,11 @@ ul.pro-amenities li span i {
 h11{
     color:red;
 }
+.row-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.buttonsCad{
+  padding-bottom: 30px;
+}

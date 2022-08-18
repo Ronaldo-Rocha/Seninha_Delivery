@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/logo.png">
     <title>Cadastrar Motoboy - Admin</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- color CSS -->
-    <link href="css/colors/blue-dark.css" id="theme" rel="stylesheet">
+    <link href="css/colors/gray-dark.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -89,10 +89,10 @@
                 <ul class="nav" id="side-menu">
 
                     <li class="devider"></li>
-                    <li> <a href="<?= $site ?>admin/painel.php" class="waves-effect"><i class="icon-home"></i> <span class="hide-menu">Painel</span></a> </li>
-                    <li> <a href="<?= $site; ?>admin/painel.php?exe=configuracoes" class="waves-effect"><i class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Configurações</span></a> </li>
-                    <li> <a href="<?= $site; ?>admin/painel.php?exe=mudar-login" class="waves-effect"><i class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Alterar dados de login</span></a> </li>
-                    <li> <a href="<?= $site; ?>admin/painel.php?exe=todos-os-clientes"><i class="mdi mdi-account-multiple"></i> <span class="hide-menu">Todos os clientes</span></a> </li>
+                    <li> <a href="painel.html" class="waves-effect"><i class="icon-home"></i> <span class="hide-menu">Painel</span></a> </li>
+                    <li> <a href="#" class="waves-effect"><i class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Configurações</span></a> </li>
+                    <li> <a href="#" class="waves-effect"><i class="mdi mdi-settings fa-fw"></i> <span class="hide-menu">Alterar dados de login</span></a> </li>
+                    <li> <a href="#"><i class="mdi mdi-account-multiple"></i> <span class="hide-menu">Todos os clientes</span></a> </li>
                 </ul>
             </div>
         </div>
@@ -127,130 +127,859 @@
 <div class="row">
     <div class="col-md-12">
         <div class="panel">
-            
                 <div class="table-responsive">
                     <form class="form-horizontal">
-                        <fieldset>
+                      <fieldset>
                         <div class="panel panel-primary">
                             <div class="panel-heading">Cadastro Motoboy</div>
-                            
-                            <div class="panel-body">
-                        <div class="form-group">
+                              <div class="panel-body">
+                                <div class="form-group">
+                                  <div class="col-md-11 control-label">
+                                          <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+                                  </div>
+                                </div>
                         
-                        <div class="col-md-11 control-label">
-                                <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
-                        </div>
-                        </div>
+                                <!-- Text input-->
+                                <div class="form-group">
+                                  <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>  
+                                  <div class="col-md-8">
+                                    <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+                                  </div>
+                                </div>
                         
-                        <!-- Text input-->
-                        <div class="form-group">
-                          <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>  
-                          <div class="col-md-8">
-                          <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
-                          </div>
-                        </div>
-                        
-                        <!-- Text input-->
-                        <div class="form-group">
-                          <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>  
-                          <div class="col-md-2">
-                          <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
-                          </div>
-                        </div>
+                                <!-- Text input-->
+                                <div class="form-group">
+                                  <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>  
+                                  <div class="col-md-2">
+                                    <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+                                  </div>
+                                </div>
                         
                         
-                        <!-- Prepended text-->
-                        <div class="form-group">
-                          <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
-                          <div class="col-md-2">
-                            <div class="input-group">
-                              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                              <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
-                              OnKeyPress="formatar('## #####-####', this)">
+                                <!-- Prepended text-->
+                                <div class="form-group">
+                                  <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
+                                  <div class="col-md-2">
+                                    <div class="input-group">
+                                      <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                      <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                                      OnKeyPress="formatar('## #####-####', this)">
+                                    </div>
+                                  </div>
+                                  
+                                  <label class="col-md-1 control-label" for="prependedtext">Telefone</label>
+                                    <div class="col-md-2">
+                                      <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                        <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" type="text" maxlength="13"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                                        OnKeyPress="formatar('## #####-####', this)">
+                                      </div>
+                                    </div>
+                                </div> 
+
+                                <!-- Search input-->
+                                <div class="form-group">
+                                  <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
+                                    <div class="col-md-2">
+                                      <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+                                    </div>
+                                    <div class="col-md-2">
+                                      <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
+                                    </div>
+                                </div>
+                        
+                                <!-- Prepended text-->
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
+                                    <div class="col-md-4">
+                                      <div class="input-group">
+                                          <span class="input-group-addon">Rua</span>
+                                          <input id="rua" name="rua" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+                                      </div>
+                                    
+                                    </div>
+                                    <div class="col-md-2">
+                                      <div class="input-group">
+                                          <span class="input-group-addon">Nº <h11>*</h11></span>
+                                          <input id="numero" name="numero" class="form-control" placeholder="" required=""  type="text">
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                      <div class="input-group">
+                                          <span class="input-group-addon">Bairro</span>
+                                          <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+                                      </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label" for="prependedtext"></label>
+                                    <div class="col-md-4">
+                                      <div class="input-group">
+                                          <span class="input-group-addon">Cidade</span>
+                                          <input id="cidade" name="cidade" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="col-md-2">
+                                      <div class="input-group">
+                                          <span class="input-group-addon">Estado</span>
+                                          <input id="estado" name="estado" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+                                      </div>
+                                    </div>
+                                </div>
+
+                          </div> <!-- fim panel-body-->
+                        </div> <!-- fim panel panel-primary-->
+                      </fieldset>
+                    </form>
+                    <!-- HORARIOS -->
+                      <section id="section-1 ">
+                        <form
+                          method="post"
+                          action="#sendempresa"
+                          enctype="multipart/form-data"
+                        >
+                          <div class="wrapper_indent">
+                            <div class="text-center">
+                              <h3>Horários de funcionamento</h3>
+                              <p>
+                                Defina o seu horário de atendimento para que seus clientes
+                                saibam quando seus serviços estiverem disponíveis.
+                              </p>
                             </div>
+                            <div class="panel panel-primary">
+                              <div
+                                class="panel-heading"
+                              >
+                                <h4
+                                  data-toggle="collapse"
+                                  data-parent="#accordion"
+                                  href="#collapse1"
+                                  class="panel-title expand collapsed"
+                                  aria-expanded="false"
+                                >
+                                  
+                                  <center>
+                                    <a
+                                      style="color: #ffffff"
+                                      href="#"
+                                      target="_blank"
+                                      rel="external nofollow"
+                                      >Cique aqui para Configurar Horários.</a
+                                    >
+                                  </center>
+                                </h4>
+                              </div>
+                              <fieldset>
+                                <div
+                                id="collapse1"
+                                class="panel-collapse collapse"
+                                style="height: 0px"
+                                aria-expanded="false"
+                              >
+                                <div class="container text-center">
+                                    <div class="panel-body ">
+                                        <div class="wrapper_indent">
+                                          <label>SEGUNDA FEIRA</label>
+                                          <br />
+                                          <input
+                                            id="config_segunda"
+                                            name="config_segunda"
+                                            type="checkbox"
+                                          
+                                            value="true"
+                                          />
+                                          <label for="config_segunda"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA MANHÃ
+                                            </strong></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="segunda_manha_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="segunda_manha_de"
+                                                  id="segunda_manha_de"
+                                                  data-mask="00:00"
+                                                  value="09:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="segunda_manha_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="segunda_manha_ate"
+                                                  id="segunda_manha_ate"
+                                                  data-mask="00:00"
+                                                  value="10:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <input
+                                            id="config_segundaa"
+                                            name="config_segundaa"
+                                            type="checkbox"
+                                            value="true"
+                                          />
+                                          <label for="config_segundaa"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA TARDE</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="segunda_tarde_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="segunda_tarde_de"
+                                                  id="segunda_tarde_de"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="segunda_tarde_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="segunda_tarde_ate"
+                                                  id="segunda_tarde_ate"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- End wrapper_indent -->
+                                        <hr />
+                    
+                                        <div class="wrapper_indent">
+                                          <label>TERÇA FEIRA</label>
+                                          <br />
+                                          <input
+                                            id="config_terca"
+                                            name="config_terca"
+                                            value="true"
+                                            type="checkbox"
+                                          />
+                                          <label for="config_terca"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA MANHÃ</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="terca_manha_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="terca_manha_de"
+                                                  id="segunda_manha_de"
+                                                  data-mask="00:00"
+                                                  value="09:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="terca_manha_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="terca_manha_ate"
+                                                  id="terca_manha_ate"
+                                                  data-mask="00:00"
+                                                  value="12:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <input
+                                            id="config_tercaa"
+                                            name="config_tercaa"
+                                            value="true"
+                                            type="checkbox"
+                                          /><label for="config_tercaa"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA TARDE</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="terca_tarde_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="terca_tarde_de"
+                                                  id="terca_tarde_de"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="terca_tarde_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="terca_tarde_ate"
+                                                  id="terca_tarde_ate"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- End wrapper_indent -->
+                                        <hr />
+                    
+                                        <div class="wrapper_indent">
+                                          <label>QUARTA FEIRA</label>
+                                          <br />
+                                          <input
+                                            id="config_quarta"
+                                            name="config_quarta"
+                                            value="true"
+                                            type="checkbox"
+                                          />
+                                          <label for="config_quarta"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA MANHÃ</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="quarta_manha_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="quarta_manha_de"
+                                                  id="quarta_manha_de"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="quarta_manha_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="quarta_manha_ate"
+                                                  id="quarta_manha_ate"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <input
+                                            id="config_quartaa"
+                                            name="config_quartaa"
+                                            value="true"
+                                            type="checkbox"
+                                          /><label for="config_quartaa"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA TARDE</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="quarta_tarde_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="quarta_tarde_de"
+                                                  id="quarta_tarde_de"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="quarta_tarde_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="quarta_tarde_ate"
+                                                  id="quarta_tarde_ate"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- End wrapper_indent -->
+                                        <hr />
+                                        <div class="wrapper_indent">
+                                          <label>QUINTA FEIRA</label>
+                                          <br />
+                                          <input
+                                            id="config_quinta"
+                                            name="config_quinta"
+                                            value="true"
+                                            type="checkbox"
+                                          />
+                                          <label for="config_quinta"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA MANHÃ</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="quinta_manha_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="quinta_manha_de"
+                                                  id="quinta_manha_de"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="quinta_manha_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="quinta_manha_ate"
+                                                  id="quinta_manha_ate"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <input
+                                            id="config_quintaa"
+                                            name="config_quintaa"
+                                            value="true"
+                                            type="checkbox"
+                                          /><label for="config_quintaa"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA TARDE</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="quinta_tarde_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="quinta_tarde_de"
+                                                  id="quinta_tarde_de"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="quinta_tarde_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="quinta_tarde_ate"
+                                                  id="quinta_tarde_ate"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- End wrapper_indent -->
+                                        <hr />
+                    
+                                        <div class="wrapper_indent">
+                                          <label>SEXTA FEIRA</label>
+                                          <br />
+                                          <input
+                                            id="config_sexta"
+                                            name="config_sexta"
+                                            value="true"
+                                            type="checkbox"
+                                          />
+                                          <label for="config_sexta"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA MANHÃ</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="sexta_manha_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="sexta_manha_de"
+                                                  id="sexta_manha_de"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="sexta_manha_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="sexta_manha_ate"
+                                                  id="sexta_manha_ate"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <input
+                                            id="config_sextaa"
+                                            name="config_sextaa"
+                                            value="true"
+                                            type="checkbox"
+                                          />
+                                          <label for="config_sextaa"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA TARDE</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="sexta_tarde_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="sexta_tarde_de"
+                                                  id="sexta_tarde_de"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="sexta_tarde_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="sexta_tarde_ate"
+                                                  id="sexta_tarde_ate"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- End wrapper_indent -->
+                                        <hr />
+                    
+                                        <div class="wrapper_indent">
+                                          <label>SABADO</label>
+                                          <br />
+                                          <input
+                                            id="config_sabado"
+                                            name="config_sabado"
+                                            value="true"
+                                            type="checkbox"
+                                          />
+                                          <label for="config_sabado"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA MANHÃ</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="sabado_manha_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="sabado_manha_de"
+                                                  id="sabado_manha_de"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="sabado_manha_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="sabado_manha_ate"
+                                                  id="sabado_manha_ate"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <input
+                                            id="config_sabadoo"
+                                            name="config_sabadoo"
+                                            value="true"
+                                            type="checkbox"
+                                          />
+                                          <label for="config_sabadoo"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA TARDE</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="sabado_tarde_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="sabado_tarde_de"
+                                                  id="sabado_tarde_de"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="sabado_tarde_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="sabado_tarde_ate"
+                                                  id="sabado_tarde_ate"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- End wrapper_indent -->
+                                        <hr />
+                    
+                                        <div class="wrapper_indent">
+                                          <label>DOMINGO</label>
+                                          <br />
+                                          <input
+                                            id="config_domingo"
+                                            name="config_domingo"
+                                            value="true"
+                                            type="checkbox"
+                                          />
+                                          <label for="config_domingo"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA MANHÃ</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="domingo_manha_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="domingo_manha_de"
+                                                  id="domingo_manha_de"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="domingo_manha_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="domingo_manha_ate"
+                                                  id="domingo_manha_ate"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <input
+                                            id="config_domingoo"
+                                            name="config_domingoo"
+                                            value="true"
+                                            type="checkbox"
+                                          /><label for="config_domingoo"
+                                            ><strong style="color: #85c99d">
+                                              PERIODO DA TARDE</strong
+                                            ></label
+                                          >
+                                          <div class="row row-time">
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="domingo_tarde_de">de:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="domingo_tarde_de"
+                                                  id="domingo_tarde_de"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-2 col-sm-6">
+                                              <div class="form-group">
+                                                <label for="domingo_tarde_ate">até:</label>
+                                                <input
+                                                  required=""
+                                                  type="time"
+                                                  name="domingo_tarde_ate"
+                                                  id="domingo_tarde_ate"
+                                                  data-mask="00:00"
+                                                  value="00:00"
+                                                  class="form-control"
+                                                  autocomplete="off"
+                                                  maxlength="5"
+                                                />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- End wrapper_indent -->
+                                      </div> <!-- fim panel-body-->
+                                </div> <!--fim container-->
+                                
+                              </div> <!-- fim panel-collapse collapse-->
+                            </fieldset>
+                          </div> <!-- fim panel panel-primary-->
+                          <!-- Button (Double) -->
+                          <div class="form-group">
+                              <label class="col-md-2 control-label" for="Cadastrar"></label>
+                              <div class="col-md-8 text-center buttonsCad">
+                                <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+                                <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
+                              </div>
                           </div>
-                          
-                            <label class="col-md-1 control-label" for="prependedtext">Telefone</label>
-                             <div class="col-md-2">
-                            <div class="input-group">
-                              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                              <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" type="text" maxlength="13"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
-                              OnKeyPress="formatar('## #####-####', this)">
-                            </div>
+                          <!-- FIM Button (Double) -->
                           </div>
-                         </div> 
-
-                        <!-- Search input-->
-                        <div class="form-group">
-                          <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
-                          <div class="col-md-2">
-                            <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
-                          </div>
-                          <div class="col-md-2">
-                              <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
-                            </div>
-                        </div>
-                        
-                        <!-- Prepended text-->
-                        <!-- Prepended text-->
-<div class="form-group">
-    <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
-    <div class="col-md-4">
-      <div class="input-group">
-        <span class="input-group-addon">Rua</span>
-        <input id="rua" name="rua" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-      </div>
-      
-    </div>
-      <div class="col-md-2">
-      <div class="input-group">
-        <span class="input-group-addon">Nº <h11>*</h11></span>
-        <input id="numero" name="numero" class="form-control" placeholder="" required=""  type="text">
-      </div>
-      
-    </div>
-    
-    <div class="col-md-3">
-      <div class="input-group">
-        <span class="input-group-addon">Bairro</span>
-        <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-      </div>
-      
-    </div>
-  </div>
-  
-  <div class="form-group">
-    <label class="col-md-2 control-label" for="prependedtext"></label>
-    <div class="col-md-4">
-      <div class="input-group">
-        <span class="input-group-addon">Cidade</span>
-        <input id="cidade" name="cidade" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
-      </div>
-      
-    </div>
-    
-     <div class="col-md-2">
-      <div class="input-group">
-        <span class="input-group-addon">Estado</span>
-        <input id="estado" name="estado" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
-      </div>
-      
-    </div>
-  </div>
-  
-
-
-                      </form>
-                </div>
-            
-
-           
-        </div>
-    </div>
-</div>
+                        </form>
+                      </section>
+                    <!-- FIM HORARIOS -->
+            </div> <!--fim table responsive-->
+        </div> <!--fim panel-->
+    </div> <!--fim col 12-->
+</div> <!--fim row-->
 <!-- FIM FORM  -->
 <nav aria-label="Page navigation example">
-    <ul class="pagination"><li><a title="Primeiro" href="https://miodelivery.com.br/admin/painel.php?exe=home&amp;page=1">Primeiro</a></li><li><span class="active">1</span></li><li><a title="Página 2" href="https://miodelivery.com.br/admin/painel.php?exe=home&amp;page=2">2</a></li><li><a title="Último" href="https://miodelivery.com.br/admin/painel.php?exe=home&amp;page=2">Último</a></li></ul></nav>
+    <ul class="pagination"><li><a title="Primeiro" href="#">Primeiro</a></li><li><span class="active">1</span></li><li><a title="Página 2" href="#">2</a></li><li><a title="Último" href="#">Último</a></li></ul></nav>
 
 <script type="text/javascript">
 
@@ -283,7 +1012,7 @@
 
 
             $.ajax({
-                url: 'https://miodelivery.com.br/admin/controlers/excluircliente.php',
+                url: '#',
                 method: 'post',
                 data: {'idcliente' : iduserloja},
                 success: function(data){
