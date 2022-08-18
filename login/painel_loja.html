@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url("assets/img/bg-panel.jpg");
+    }
+</style>
+<body >
+    <header class="container-fluid">
+
+    </header>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-2 text-dark bg-opacity-75 ">
+        <div class="container">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+  
+              <div class="dropdown outline">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  COMO FUNCIONA
+                </button>
+                <ul class="dropdown-menu bg-white p-2 text-dark bg-opacity-75 " aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item fw-bold" href="#advantage">VANTAGENS</a></li>
+                  <li><a class="dropdown-item fw-bold" href="#howit">COMO FUNCIONA</a></li>
+                  <li><a class="dropdown-item fw-bold" href="#about">SOBRE</a></li>
+                </ul>
+              </div>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTATO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="trabalheConosco.html">TRABALHE CONOSCO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">INTEGRAÇÃO</a>
+              </li>
+              <li class="d-flex align-items-center">
+                <a class="btnLogin " href="login">LOGIN</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- end NAV -->
+    <div class="container bg-light">
+        <div class="container-fluid"> 
+            <div class="indent_title_in">
+              <i class="fa fa-cutlery" aria-hidden="true"></i>
+              <h3>PEDIDOS!</h3>
+              <p style="color: red;"><b><span>*</span> Mantenha essa página aberta! A cada minuto ela te atualiza sobre os pedidos!</b></p>
+            </div>
+            <style type="text/css">
+              #custom-search-input{
+                padding: 3px;
+                border: solid 1px #E4E4E4;
+                border-radius: 6px;
+                background-color: #fff;
+                width: 20vw;
+              }
+          
+              #custom-search-input input{
+                border: 0;
+                box-shadow: none;
+              }
+          
+              #custom-search-input button{
+                margin: 2px 0 0 0;
+                background: none;
+                box-shadow: none;
+                border: 0;
+                color: #666666;
+                padding: 0 8px 0 10px;
+                border-left: solid 1px #ccc;
+              }
+          
+              #custom-search-input button:hover{
+                border: 0;
+                box-shadow: none;
+                border-left: solid 1px #ccc;
+              }
+          
+              #custom-search-input .glyphicon-search{
+                font-size: 50px;
+              }
+            </style>
+            <div style="margin: 10px auto;align-items: center;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;" class="toolbar-btn-action">
+              <a href="#" class="btn btn-primary">Todos <i class="fa fa-cutlery" aria-hidden="true"></i></a>&nbsp;
+              <a href="#" class="btn btn-warning">Abertos <i class="fa fa-cutlery" aria-hidden="true"></i></a>&nbsp;
+              <a href="#" class="btn btn-info">Em Andamento <i class="fa fa-cutlery" aria-hidden="true"></i></a>&nbsp;
+              <a href="#" class="btn btn-success">Finalizados <i class="fa fa-cutlery" aria-hidden="true"></i></a>&nbsp;
+              <a href="#" class="btn btn-danger">Cancelados <i class="fa fa-cutlery" aria-hidden="true"></i></a>
+            </div>
+          
+            <div style="margin: 0 auto;align-items: center;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;" class="container">
+              <div class="row">
+                <form action="#search" method="post">
+                  <div class="col-md-6">           
+                    <div id="custom-search-input">
+                      <div class="input-group col-md-12">
+                        <input type="text" name="s" class="form-control input-lg" placeholder="Código do pedido">
+                        <span class="input-group-btn">
+                          <button class="btn btn-info btn-lg" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <br>
+            <div id="search"></div>
+            <div class="table-responsive">
+              <strong style="color: #000000">Total de Pedidos: 1<hr>  
+                 <!-- FINAL DO LOOP DA LEITURA DO BANCO -->
+          
+                   
+          </strong><table data-sortable="" class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>Código do pedido</th>              
+                        <th>Data e Hora pedido</th>              
+                        <th>Lanchonete</th>              
+                        <th>Envio WhatsApp</th>
+                        <th>Status</th>            
+                        <th data-sortable="false">Ver Pedido</th>
+                        <th>Motoboy</th>
+                    </tr>
+                </thead>
+                      <tbody>
+                  
+                            <!-- INICIO DO LOOP DA LEITURA DO BANCO --> 
+                                <tr id="PED0822-1">
+                                    <td>
+                          
+                                        <strong>PED0822-1</strong>
+                                    
+                                    </td>
+                                    <td>                    
+                                      <span>18/08/2022 ás 14:31</span>   
+                                    </td>   
+                                    <td><strong style="color:green;">SIM</strong></td>
+                                    
+                                      
+                                      <td><strong style="color:green;">SIM</strong></td>
+                                      
+                                      <td>                    
+                                       <span class="label label-warning">Aberto</span>              </td>
+                                     <td>
+                                       <button id="verPedido_682" class="btn btn-primary btn-xs">Ver Pedido</button>
+                                       <script type="text/javascript">
+                                         $(document).ready(function(){
+                       
+                                           $('#verPedido_682').click(function(){
+                                             $('#verPedido_682').html('Aguarde...');
+                                             $('#verPedido_682').prop('disabled', true);
+                       
+                                             $.ajax({
+                                               url: '#',
+                                               method: "post",
+                                               data: {'idDoPedido' : '682', 'iduser' : '37'},
+                       
+                                               success: function(data){        
+                                                 $('#verPedido_682').html('Ver Pedido');
+                                                 $('#verPedido_682').prop('disabled', false);
+                                                 if(data == 'true'){
+                                                   window.location.replace('#');
+                                                 }
+                                               }
+                                             });
+                       
+                                           }); 
+                       
+                                         });
+                                       </script>
+                                     </td>  
+                                     <td>
+                                         <!--<button class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal">Enviar ao Motoboy</button>-->
+                                         <button onclick="listMotoboys(682);" class="btn btn-success btn-xs">Enviar ao Motoboy</button>
+                                     </td>
+                                </tr>   
+                      </tbody>
+          </table><strong style="color: #000000">
+          </strong></div><strong style="color: #000000">
+          
+          <div class="data-table-toolbar">
+             
+          </div>
+          
+          </strong></div>
+    </div>
+
+
+
+
+      <!-- Bootstrap Bundle with Popper -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

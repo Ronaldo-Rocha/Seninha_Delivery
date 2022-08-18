@@ -317,3 +317,13 @@ input.tab-input:focus {
     background-color: #E65C00 !important;
     color: white !important;
 }
+/* ###################### PAINEL LOJA CSS ################################### */
+
+.background-full{
+    background-image: url("../img/bg-panel.jpg");
+}
+i{
+    height:5px;
+    width: 5px;
+    font-size: 1rem;
+}
