@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Cadastro Motoboy</title>
+</head>
+<body>
+    <header class="container-fluid">
+    </header>
+    <!-- NAV -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-2 text-dark bg-opacity-75 ">
+            <div class="container">
+            <a class="navbar-brand" href="#"><img width="80px" src="assets/img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                </li>
+    
+                <div class="dropdown outline">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    COMO FUNCIONA
+                    </button>
+                    <ul class="dropdown-menu bg-white p-2 text-dark bg-opacity-75 " aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item fw-bold" href="index.html#advantage">VANTAGENS</a></li>
+                    <li><a class="dropdown-item fw-bold" href="index.html#howit">COMO FUNCIONA</a></li>
+                    <li><a class="dropdown-item fw-bold" href="index.html#about">SOBRE</a></li>
+                    </ul>
+                </div>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">CONTATO</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="trabalheConosco.html">TRABALHE CONOSCO</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="#">INTEGRAÇÃO</a>
+                </li>
+                
+                <!-- cadastros -->
+                <div class="dropdown outline">
+                    <button class="btn dropdown-toggle me-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    CADASTRE-SE
+                    </button>
+                    <ul class="dropdown-menu bg-white p-2 text-dark bg-opacity-75 " aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item fw-bold" href="cadMotoboy.html">MOTOBOY</a></li>
+                    <li><a class="dropdown-item fw-bold" href="cadCliente.html">CLIENTE</a></li>
+                    </ul>
+                </div>
+                <!-- fim cadastros -->
+                <li class="d-flex align-items-center">
+                    <a class="btnLogin " href="login">LOGIN</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    <!-- end NAV -->
+
+    <!-- formulario -->
+    <div class="container p-4 ">
+      
+        <div class="col-md-12">
+          
+          <h2 class="text-center mb-0 p-2 h2cad">CADASTRO CLIENTE</h1>
+          <form class="border rounded-bottom pb-5 pt-5" >
+                      <!-- nome -->
+                      <div class="row mb-3 ms-3">
+                        <label for="nome" class="col-md-2 col-form-label fw-bold tex">Nome*</label>
+                        <div class="col me-5">
+                          <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" aria-label="First name" required="">
+                        </div>
+                        
+                      </div>
+  
+                      <!-- documento -->
+                      <div class="row mb-3 ms-3">
+                        <label for="cpf" class="col-md-2 col-form-label fw-bold">CPF*</label>
+                        <div class="col-lg-3 col-md-4 col-sm-5  me-3">
+                          <input type="text" class="form-control" name="cpf" id="cpf" placeholder="Somente números" aria-label="cpf" required="" maxlength="11" pattern="[0-9]+$">
+                        </div>
+                      </div>
+                      
+                      <!-- telefone -->
+                      <div class="row mb-3 ms-3">
+                        <label for="telefone" class="col-md-2 col-form-label fw-bold">Telefone*</label>
+                        <div class="col-lg-3 col-md-4 col-sm-5">
+                        <input type="text" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX"  maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## #####-####', this)" required="">
+                        </div>
+                        <div class="col-lg-3 col-md-4  col-sm-5">
+                          <input type="text" class="form-control" placeholder="(XX) XXXXX-XXXX"  maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## #####-####', this)" required="">
+                        </div>
+                      </div>
+                      
+                      <!-- CEP -->
+                      <div class="row mb-3 ms-3">
+                        <label for="cep" class="col-md-2 col-form-label fw-bold">CEP*</label>
+                        <div class="col-lg-3 col-md-3 col-sm-4">
+                          <input type="text" class="form-control" id="cep" required="">
+                        </div>
+                        <div class="col-sm-4">
+                          <button type="button" class="btnLogin" onclick="pesquisacep(cep.value)">Pesquisar</button>
+                        </div>
+                      </div>
+
+                      <!-- Endereço -->
+                      <div class="row mb-3 ms-3">
+                        <label for="telefone" class="col-md-2 col-form-label fw-bold">Endereço*</label>
+                        <div class="col-lg-4 col-md-11 col-sm-11 ">
+                        <input type="text" class="form-control" id="rua" placeholder="Rua"required="" readonly>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-11">
+                          <input type="text" class="form-control" placeholder="Nº"  required="">
+                        </div>
+                        <div class="col-lg-3 col-md-9 col-sm-11 ">
+                          <input type="text" class="form-control" placeholder="Bairro" id="bairro" required="" readonly>
+                        </div>
+                      </div>
+                      
+                      <div class="row mb-3 ms-3">
+                        <label for="" class="col-lg-2"></label>
+                        <div class="col-lg-3 col-md-6 col-sm-11 ">
+                          <input type="text" class="form-control" placeholder="Cidade"  required="" readonly id="cidade">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-11">
+                          <input type="text" class="form-control" placeholder="Estado"  required="" readonly id="estado">
+                        </div>
+                      </div>
+
+                      <div>
+                          <h4 class="ms-2 p-3">Responsavel</h4>
+                      </div>
+                        <!-- nome -->
+                      <div class="row mb-3 ms-3">
+                        <label for="nomeRes" class="col-md-2 col-form-label fw-bold tex">Nome*</label>
+                        <div class="col">
+                          <input type="text" class="form-control" name="nome" id="nomeRes" placeholder="Nome" aria-label="First name" required="">
+                        </div>
+                        <div class="col me-3">
+                          <input type="text" class="form-control " placeholder="Sobrenome" aria-label="Last name" required="">
+                        </div>
+                      </div>
+  
+                      <!-- telefone -->
+                      <div class="row mb-3 ms-3">
+                        <label for="telefoneRes" class="col-md-2 col-form-label fw-bold">Telefone*</label>
+                        <div class="col-lg-3 col-md-4 col-sm-5">
+                        <input type="text" class="form-control" id="telefoneRes" placeholder="(XX) XXXXX-XXXX"  maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## #####-####', this)" required="">
+                        </div>
+                        <div class="col-lg-3 col-md-4  col-sm-5">
+                          <input type="text" class="form-control" placeholder="(XX) XXXXX-XXXX"  maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## #####-####', this)" required="">
+                        </div>
+                      </div>
+
+                    <div class="text-center pt-5 ">
+                      <button type="submit" class="btnLogin btn-success me-5">CADASTRAR</button>
+                      <button type="reset"class="btnLogin btn-danger">CANCELAR</button>
+                      
+                    </div>
+              </form>
+        </div><!-- col-md-12 -->
+      <!-- fim formulario -->
+      </div><!-- container -->
+    
+
+      <script src="assets/js/cep.js"></script>
+        <!-- Bootstrap Bundle with Popper -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

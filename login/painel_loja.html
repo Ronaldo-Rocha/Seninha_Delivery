@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
+    <title>Painel Loja</title>
 </head>
 <style>
     body{
-        background-image: url("assets/img/bg-panel.jpg");
+        background-image: url("assets/img/fastfood.jpg");
+        background-size: contain;
     }
 </style>
 <body >
@@ -31,32 +33,34 @@
   
               <div class="dropdown outline">
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  COMO FUNCIONA
+                  PEDIDOS
                 </button>
                 <ul class="dropdown-menu bg-white p-2 text-dark bg-opacity-75 " aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item fw-bold" href="#advantage">VANTAGENS</a></li>
-                  <li><a class="dropdown-item fw-bold" href="#howit">COMO FUNCIONA</a></li>
-                  <li><a class="dropdown-item fw-bold" href="#about">SOBRE</a></li>
+                  <li><a class="dropdown-item fw-bold" href="#">#</a></li>
+                  <li><a class="dropdown-item fw-bold" href="#">#</a></li>
+                  <li><a class="dropdown-item fw-bold" href="#">#</a></li>
                 </ul>
               </div>
   
               <li class="nav-item">
-                <a class="nav-link" href="#contact">CONTATO</a>
+                <a class="nav-link" href="#">#</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="trabalheConosco.html">TRABALHE CONOSCO</a>
+                <a class="nav-link" href="#">#</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">INTEGRAÇÃO</a>
+                <a class="nav-link" href="#">#</a>
               </li>
               <li class="d-flex align-items-center">
-                <a class="btnLogin " href="login">LOGIN</a>
+                <a class="btnLogin " href="#">#</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
     <!-- end NAV -->
+
+    <!-- Content -->
     <div class="container bg-light">
         <div class="container-fluid"> 
             <div class="indent_title_in">
@@ -115,9 +119,7 @@
                         <input type="text" name="s" class="form-control input-lg" placeholder="Código do pedido">
                         <span class="input-group-btn">
                           <button class="btn btn-info btn-lg" type="submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                              </svg>
+                            <i class="fa fa-search"></i>
                           </button>
                         </span>
                       </div>
@@ -165,8 +167,8 @@
                                       <td>                    
                                        <span class="label label-warning">Aberto</span>              </td>
                                      <td>
-                                       <button id="verPedido_682" class="btn btn-primary btn-xs">Ver Pedido</button>
-                                       <script type="text/javascript">
+                                      <a href="ver_pedido.html"> <button id="verPedido_682" class="btn btn-primary btn-xs">Ver Pedido</button></a>
+                                       <!-- <script type="text/javascript">
                                          $(document).ready(function(){
                        
                                            $('#verPedido_682').click(function(){
@@ -190,11 +192,11 @@
                                            }); 
                        
                                          });
-                                       </script>
+                                       </script> -->
                                      </td>  
                                      <td>
                                          <!--<button class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal">Enviar ao Motoboy</button>-->
-                                         <button onclick="listMotoboys(682);" class="btn btn-success btn-xs">Enviar ao Motoboy</button>
+                                         <button  class="btn btn-success btn-xs">Enviar ao Motoboy</button>
                                      </td>
                                 </tr>   
                       </tbody>
@@ -207,8 +209,8 @@
           
           </strong></div>
     </div>
-
-
+    <!-- end Content -->
+   <!-- <audio src="assets/midia/Campainha.mp3" autoplay loop></audio> -->
 
 
       <!-- Bootstrap Bundle with Popper -->
