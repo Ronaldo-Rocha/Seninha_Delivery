@@ -196,7 +196,7 @@
                                      </td>  
                                      <td>
                                          <!--<button class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal">Enviar ao Motoboy</button>-->
-                                         <button  class="btn btn-success btn-xs">Enviar ao Motoboy</button>
+                                         <button  class="btn btn-success btn-xs "data-bs-toggle="modal"  data-bs-target="#exampleModal">Chamar Motoboy</button>
                                      </td>
                                 </tr>   
                       </tbody>
@@ -210,9 +210,51 @@
           </strong></div>
     </div>
     <!-- end Content -->
+    <!-- Modal -->
+    <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Chamar Motoboy</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              <p> <b> Endereço de Coleta:</b> <span>Endereço 1</span></p>
+              <p> <b> Endereço de entrega:</b> <span>Endereço 2</span></p>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Forma de pagamento</label>
+                <select class="form-select" id="inputGroupSelect01" onchange="verifica(this.value)">
+                  <option value="1" selected>Selecione</option>
+                  <option value="2">Dinheiro</option>
+                  <option value="3">Cartao</option>
+                  <option value="4">PIX</option>
+                </select>
+                <div class="input-group mt-1">
+                  <span class="input-group-text">Troco</span>
+                  <input id="troco" type="text" class="form-control" disabled placeholder="0,00">
+                  <label class="input-group-text" for="inputGroupSelect01" >Status</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option value="1" selected>Selecione</option>
+                  <option value="2" >Cobrar</option>
+                  <option value="3">Pago</option>
+                </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-success">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- fim Modal -->
    <!-- <audio src="assets/midia/Campainha.mp3" autoplay loop></audio> -->
 
-
+    <script src="assets/js/troco.js"></script>
       <!-- Bootstrap Bundle with Popper -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>

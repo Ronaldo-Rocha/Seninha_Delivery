@@ -15,7 +15,7 @@
     <!-- NAV -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-2 text-dark bg-opacity-75 ">
             <div class="container">
-            <a class="navbar-brand" href="#"><img width="80px" src="assets/img/logo.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img class="logo-img" src="assets/img/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -87,7 +87,7 @@
                       </div>
   
                       <!-- documento -->
-                      <div class="row mb-3 ms-3">
+                      <div class="addPadding row mb-3 ms-3">
                         <label for="cpf" class="col-md-2 col-form-label fw-bold">CPF*</label>
                         <div class="col-lg-3 col-md-4 col-sm-5  me-3">
                           <input type="text" class="form-control" name="cpf" id="cpf" placeholder="Somente números" aria-label="cpf" required="" maxlength="11" pattern="[0-9]+$">
@@ -95,10 +95,10 @@
                       </div>
                       
                       <!-- telefone -->
-                      <div class="row mb-3 ms-3">
+                      <div class="addPadding row mb-3 ms-3">
                         <label for="telefone" class="col-md-2 col-form-label fw-bold">Telefone*</label>
                         <div class="col-lg-3 col-md-4 col-sm-5">
-                        <input type="text" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX"  maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## #####-####', this)" required="">
+                        <input type="text" class="mb-2 form-control" id="telefone" placeholder="(XX) XXXXX-XXXX"  maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## #####-####', this)" required="">
                         </div>
                         <div class="col-lg-3 col-md-4  col-sm-5">
                           <input type="text" class="form-control" placeholder="(XX) XXXXX-XXXX"  maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## #####-####', this)" required="">
@@ -106,10 +106,10 @@
                       </div>
                       
                       <!-- CEP -->
-                      <div class="row mb-3 ms-3">
+                      <div class="addPadding row mb-3 ms-3">
                         <label for="cep" class="col-md-2 col-form-label fw-bold">CEP*</label>
                         <div class="col-lg-3 col-md-3 col-sm-4">
-                          <input type="text" class="form-control" id="cep" required="">
+                          <input type="text" class="mb-2 form-control" id="cep" required="" placeholder="Somente números">
                         </div>
                         <div class="col-sm-4">
                           <button type="button" class="btnLogin" onclick="pesquisacep(cep.value)">Pesquisar</button>
@@ -117,29 +117,46 @@
                       </div>
 
                       <!-- Endereço -->
-                      <div class="row mb-3 ms-3">
-                        <label for="telefone" class="col-md-2 col-form-label fw-bold">Endereço*</label>
-                        <div class="col-lg-4 col-md-11 col-sm-11 ">
-                        <input type="text" class="form-control" id="rua" placeholder="Rua"required="" readonly>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-11">
-                          <input type="text" class="form-control" placeholder="Nº"  required="">
-                        </div>
-                        <div class="col-lg-3 col-md-9 col-sm-11 ">
-                          <input type="text" class="form-control" placeholder="Bairro" id="bairro" required="" readonly>
+                    <div class="row ms-3">
+                          
+                      <div class="addPadding col-lg-6 col-md-5 col-sm-12 mb-2 ">
+                        <div class="input-group">
+                          <label for="rua" class="col-lg-4 col-md-5 col-sm-12 col-form-label fw-bold ruaWidth">Endereço*</label>
+                          <span class="input-group-text ">Rua</span>
+                          <input type="text" class=" form-control  " id="rua" name="rua" readonly>
                         </div>
                       </div>
                       
-                      <div class="row mb-3 ms-3">
-                        <label for="" class="col-lg-2"></label>
-                        <div class="col-lg-3 col-md-6 col-sm-11 ">
-                          <input type="text" class="form-control" placeholder="Cidade"  required="" readonly id="cidade">
+                      <div class="addPadding col-lg-2 col-md-3 col-sm-12 mb-2 " >
+                        <div class="input-group">
+                            <span class="input-group-text" >Nº</span>
+                            <input type="text" class=" form-control" id="" required="">
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-11">
-                          <input type="text" class="form-control" placeholder="Estado"  required="" readonly id="estado">
-                        </div>
-                        
                       </div>
+                      
+                      <div class="addPadding col-lg-4 col-md-4 col-sm-12 pe-5 mb-2">
+                        <div class="input-group ">
+                            <span class="input-group-text">Bairro</span>
+                              <input type="text" class=" form-control" id="bairro" readonly>
+                        </div>
+                      </div>
+
+                      <div class="addPadding col-lg-6 col-md-6 col-sm-12 mb-2">
+                          <div class="input-group">
+                              <label for="" class="col-lg-4 col-md-4"></label>
+                            <span class="input-group-text">Cidade</span>
+                            <input type="text" class="form-control" id="cidade" readonly>
+                          </div>
+                      </div>
+
+                      <div class="addPadding ol-lg-2 col-md-3 col-sm-12">
+                          <div class="input-group">
+                              <span class="input-group-text">Estado</span>
+                              <input type="text" class="form-control" id="estado" readonly>
+                         </div>
+                      </div>
+
+                  </div> <!--FIM ROW-->
 
                       
                       

@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap');
+@media (max-width: 767.98px) { 
+    .ruaWidth{
+        margin-right: 400px !important;
+    }
+    .addPadding{
+        padding-right: 3rem !important;
+        
+    }
+ }
 
 /* menu nav confg */
 .dropdown-item,.dropdown button,.nav-link{
@@ -27,8 +36,7 @@ header{
 
 
 .logo-img{
-    height: 80px;
-    width: auto;
+    width: 80px;
 }
 .delivery-img{
     width: 100%;
@@ -334,4 +342,7 @@ input.tab-input:focus {
     border-radius:5px 5px 0px 0px ;
     background: #E65C00;
     color: white;
+}
+.ruaWidth{
+
 }
