@@ -343,6 +343,14 @@ input.tab-input:focus {
     background: #E65C00;
     color: white;
 }
-.ruaWidth{
-
-}
+.bgOrange{
+    background-color:  #E65C00;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+  }
+  .bgFood{
+    background:url(../../assets/img/fastfood.jpg);
+    background-size: 50% auto;
+  }
+  
